@@ -214,3 +214,39 @@
     (5) 마지막으로 서버는 암호화된 pre-master secret을 자신의 비밀키로 복호화한 뒤
 
     이를 이용하여 암호화 통신을 진행함
+
+-
+  - GET과 POST는 어떤 차이가 있나요
+  - |
+    둘 다 Resource Request라는 공통점이 있으나 그 목적과 구조에서 차이가 있음
+
+    # GET
+
+    GET같은 경우는 URL만을 이용해 Request Parameter를 전달하는 방식
+
+    길이에 제한이 있을 뿐 아니라 데이터가 직접적으로 노출될 위험이 있기에
+
+    데이터 전송보다는 Read에 목적을 두고 있음
+
+    # POST
+
+    HTTP Body를 이용해 데이터를 전송하기에 직접적으로 노출될 염려가 없으며 길이 또한 제한이 없음
+
+    따라서 POST Method의 경우 데이터 전송에 목적이 맞춰져 있음
+
+-
+  - 라우터와 스위치는 어떤 차이가 있나요?
+  - |
+    둘 다 데이터 송수신을 위해 사용하는 장치이나, Layer에서부터 그 차이가 있음
+
+    # 스위치
+
+    Switch의 경우 Datalink layer에서 사용하는 장비이며
+
+    MAC address를 이용해 Dataframe을 송수신함
+
+    # 라우터
+
+    Router는 Network layer에서 사용하며
+
+    IP를 이용해 Routing table을 구성하고, 이를 기반으로 경로를 설정하여 패킷을 송수신하는 장비임

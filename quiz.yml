@@ -2,3 +2,5 @@
 - ${/os.yml}
 - ${/db.yml}
 - ${/network.yml}
+- ${/security.yml}
+- ${/web.yml}
